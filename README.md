@@ -1,5 +1,5 @@
 # Racc Project Template
-My template for C++ projects using CMake.
+aes001's template for C++ projects using CMake.
 
 ## Features
 - Allows for easy enabling of ASAN and UBSAN.

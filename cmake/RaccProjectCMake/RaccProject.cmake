@@ -45,8 +45,21 @@ endfunction()
 
 
 
-function(RACC_DEFINE_LIBRARY_TARGET projectName)
-	add_library(${projectName} ${ARGN})
+function(RACC_DEFINE_LIBRARY_TARGET_STATIC projectName)
+	add_library(${projectName} STATIC ${ARGN})
+
+	target_link_libraries(${projectName}
+		PRIVATE
+			RACC_BUILD_POLICY
+	)
+endfunction()
+
+
+
+
+
+function(RACC_DEFINE_LIBRARY_TARGET_SHARED projectName)
+	add_library(${projectName} SHARED ${ARGN})
 
 	target_link_libraries(${projectName}
 		PRIVATE

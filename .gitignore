@@ -60,11 +60,11 @@ CMakeUserPresets.json
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #cmake-build-*
 
-./build
+build
 
 ./compile_commands.json
 
-./.vscode
+.vscode
 
 
 
@@ -498,4 +498,5 @@ FodyWeavers.xsd
 *.msi
 *.msix
 *.msm
+
 *.msp
